@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Playwright: Run current test file",
+      "type": "shell",
+      "command": "npx",
+      "args": ["playwright", "test", "${file}"] ,
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": false
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Playwright: Run current test file (headed)",
+      "type": "shell",
+      "command": "npx",
+      "args": ["playwright", "test", "${file}", "--headed"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": false
+      },
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "Playwright: Run all tests",
+      "type": "shell",
+      "command": "npx",
+      "args": ["playwright", "test"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": false
+      },
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}

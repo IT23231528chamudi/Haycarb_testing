@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": "Run current Playwright test file",
+      "type": "pwa-node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["playwright", "test", "${file}"] ,
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      "name": "Debug current Playwright test file",
+      "type": "pwa-node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["playwright", "test", "${file}", "--debug"],
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

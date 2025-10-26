@@ -1,0 +1,26 @@
+{
+  "name": "playwright-testing-tool-evaluation",
+  "version": "1.0.0",
+  "description": "End-to-end testing using Playwright for the Software Testing Tool Evaluation assignment. Features automated browser testing, visual reports, and CI integration with GitHub Actions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/it23392830/Playwright-testing-tool-evaluation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/it23392830/Playwright-testing-tool-evaluation/issues"
+  },
+  "homepage": "https://github.com/it23392830/Playwright-testing-tool-evaluation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.9.1"
+  }
+}

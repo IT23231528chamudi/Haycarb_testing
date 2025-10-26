@@ -1,0 +1,8 @@
+{
+  // Enable Code Lenses so extensions (Playwright) can show Run/Debug links above tests
+  "editor.codeLens": true,
+
+  // Optional: keep test tasks and output tidy in the integrated terminal
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.scrollback": 10000
+}

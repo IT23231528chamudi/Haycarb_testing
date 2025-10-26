@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Playwright - Google Search - Fixture</title>
+    <style>
+      body { font-family: Arial, sans-serif; padding: 20px; }
+      #search { margin-top: 16px; }
+      .result { padding: 8px 0; border-bottom: 1px solid #eee; }
+    </style>
+  </head>
+  <body>
+    <h1>Google Search - Fixture</h1>
+    <form id="searchForm">
+      <input name="q" id="q" placeholder="Search" autocomplete="off" />
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="search" aria-live="polite" hidden>
+      <div class="result">Playwright: Fast and reliable end-to-end testing for modern web apps</div>
+      <div class="result">Playwright · GitHub</div>
+      <div class="result">Playwright documentation</div>
+    </div>
+
+    <script>
+      const form = document.getElementById('searchForm');
+      const input = document.getElementById('q');
+      const results = document.getElementById('search');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // simulate a short delay like a real search
+        results.hidden = true;
+        setTimeout(() => {
+          results.hidden = false;
+          // update content to include query
+          const q = input.value || '';
+          if (q) {
+            results.querySelector('.result').textContent = q + ' - Playwright: Fast and reliable end-to-end testing';
+          }
+        }, 300);
+      });
+    </script>
+  </body>
+</html>
