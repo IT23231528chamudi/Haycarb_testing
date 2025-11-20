@@ -37,7 +37,13 @@ npx playwright test tests/fuel_tracker/auth.spec.ts
 ```powershell
 npx playwright test tests/fuel_tracker/homepage.spec.ts --project=chromium --headed
 ```
-5. Run the auth spec (helpful when re-running after an interruption):
+
+5.  email and password
+```powershell
+$env:FUEL_USERNAME = "chamudisashanka@haycarb.com"; $env:FUEL_PASSWORD = "Chamudi@123"; npx playwright test tests/fuel_tracker/auth.spec.ts --project=chromium --headed --reporter=list
+```
+
+6. Run the auth spec (helpful when re-running after an interruption):
 
 ```powershell
 npx playwright test tests/fuel_tracker/auth.spec.ts -j 1 --reporter=list
