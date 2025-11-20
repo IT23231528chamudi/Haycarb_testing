@@ -11,6 +11,14 @@ npm install
 npx playwright install
 ```
 
+All test cases:
+
+```powershell
+npx playwright test --list
+npx playwright test tests/fuel_tracker --list
+npx playwright test tests/saucedemo --list
+```
+
 1. Run all fuel-tracker tests:
 
 ```powershell
@@ -20,33 +28,31 @@ npx playwright test tests/fuel_tracker
 1. To run an individual test file, open it in VS Code and use the tasks/Run buttons we added, or run:
 
 ```powershell
-npx playwright test tests/fuel_tracker/homepage.spec.ts
+npx playwright test tests/fuel_tracker/auth.spec.ts
+
+1. Open with the Chrome:
+
+```powershell
+npx playwright test tests/fuel_tracker/homepage.spec.ts --project=chromium --headed
 ```
 
 Additional useful commands
 
-- Run a single spec (entries) with 1 worker and list reporter:
-
-```powershell
-npx playwright test tests/fuel_tracker/entries.spec.ts -j 1 --reporter=list
-```
-
-- Run the auth spec (helpful when re-running after an interruption):
+1.Run the auth spec (helpful when re-running after an interruption):
 
 ```powershell
 npx playwright test tests/fuel_tracker/auth.spec.ts -j 1 --reporter=list
-```
+
+- Run the at the chromium spec:
+
+```powershell
+ npx playwright test tests/fuel_tracker/homepage.spec.ts --project
+
 
 - Run the auth spec (Chromium only) for performance troubleshooting:
 
 ```powershell
 npx playwright test tests/fuel_tracker/auth.spec.ts --project=chromium --reporter=list
-```
-
-- Run the homepage spec:
-
-```powershell
-npx playwright test tests/fuel_tracker/homepage.spec.ts -j 1 --reporter=list
 ```
 
 - Run the validation spec:
