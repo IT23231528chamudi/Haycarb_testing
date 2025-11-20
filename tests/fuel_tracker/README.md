@@ -44,11 +44,13 @@ Additional useful commands
 
 ```powershell
 npx playwright test tests/fuel_tracker/auth.spec.ts -j 1 --reporter=list
+```
 
 - Run the at the chromium spec:
 
 ```powershell
  npx playwright test tests/fuel_tracker/homepage.spec.ts --project
+ ```
 
 
 - Run the auth spec (Chromium only) for performance troubleshooting:
