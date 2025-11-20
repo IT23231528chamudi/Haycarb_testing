@@ -10,6 +10,9 @@ export default defineConfig({
   use: {
     baseURL: 'http://localhost:3000', // Update this to your app's URL
     trace: 'on-first-retry',
+    // Capture screenshots and video so runs can be reviewed later
+    screenshot: 'only-on-failure',
+    video: 'on',
   },
 
   projects: [
