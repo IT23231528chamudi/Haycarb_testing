@@ -11,7 +11,7 @@ npm install
 npx playwright install
 ```
 
-All test cases:
+1. All test cases viwe:
 
 ```powershell
 npx playwright test --list
@@ -19,21 +19,23 @@ npx playwright test tests/fuel_tracker --list
 npx playwright test tests/saucedemo --list
 ```
 
-1. Run all fuel-tracker tests:
+2. Run all fuel-tracker tests:
 
 ```powershell
 npx playwright test tests/fuel_tracker
 ```
 
-2. To run an individual test file, open it in VS Code and use the tasks/Run buttons we added, or run:
+3. To run an individual test file, open it in VS Code and use the tasks/Run buttons we added, or run:
 
 ```powershell
 npx playwright test tests/fuel_tracker/auth.spec.ts
+```
 
-3. Open with the Chrome:
+4. Open with the Chrome:
 
 ```powershell
 npx playwright test tests/fuel_tracker/homepage.spec.ts --project=chromium --headed
+```
 
 
 Additional useful commands
