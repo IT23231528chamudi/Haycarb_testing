@@ -25,16 +25,16 @@ npx playwright test tests/saucedemo --list
 npx playwright test tests/fuel_tracker
 ```
 
-1. To run an individual test file, open it in VS Code and use the tasks/Run buttons we added, or run:
+2. To run an individual test file, open it in VS Code and use the tasks/Run buttons we added, or run:
 
 ```powershell
 npx playwright test tests/fuel_tracker/auth.spec.ts
 
-1. Open with the Chrome:
+3. Open with the Chrome:
 
 ```powershell
 npx playwright test tests/fuel_tracker/homepage.spec.ts --project=chromium --headed
-```
+
 
 Additional useful commands
 
