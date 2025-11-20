@@ -22,6 +22,7 @@ npx playwright test tests/saucedemo --list
 2. Run all fuel-tracker tests:
 
 ```powershell
+npx playwright test tests
 npx playwright test tests/fuel_tracker
 ```
 
